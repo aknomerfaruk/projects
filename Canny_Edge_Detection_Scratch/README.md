@@ -1,7 +1,7 @@
 Canny detection algorithm:
 1. **Noise reduction.** To remove noise, the image is smoothed by Gaussian blur with the ![sigma](https://latex.codecogs.com/gif.latex?%5Csigma%20%3D%201.4). The sum of the elements in the Gaussian kernel equals $1$. <br><br>
 
-2. **Calculating gradients.** When the image $I$ is smoothed, the derivatives $G_x$ and $G_y$ w.r.t. $x$ and $y$ are calculated. It can be implemented by convolving $I$ with Sobel kernels $K_x$ and $K_y$, respectively: 
+2. **Calculating gradients.** When the image $I$ is smoothed, the derivatives ![g_x](https://latex.codecogs.com/gif.latex?G_x) and ![g_y](https://latex.codecogs.com/gif.latex?G_y) w.r.t. x and y are calculated. It can be implemented by convolving I with Sobel kernels ![K_x](https://latex.codecogs.com/gif.latex?K_x) and ![K_y](https://latex.codecogs.com/gif.latex?K_y), respectively: 
 $$ K_x = \begin{pmatrix} -1 & 0 & 1 \\ -2 & 0 & 2 \\ -1 & 0 & 1 \end{pmatrix}, K_y = \begin{pmatrix} 1 & 2 & 1 \\ 0 & 0 & 0 \\ -1 & -2 & -1 \end{pmatrix}. $$ 
 Then, the magnitude $G$ and the slope $\theta$ of the gradient are calculated:
 $$ |G| = \sqrt{I_x^2 + I_y^2}, $$
