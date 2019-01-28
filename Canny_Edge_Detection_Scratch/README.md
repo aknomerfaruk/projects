@@ -5,9 +5,10 @@ Canny detection algorithm:
 
 ![sobel_filters](https://latex.codecogs.com/gif.latex?K_x%20%3D%20%5Cbegin%7Bpmatrix%7D%20-1%20%26%200%20%26%201%20%5C%5C%20-2%20%26%200%20%26%202%20%5C%5C%20-1%20%26%200%20%26%201%20%5Cend%7Bpmatrix%7D%2C%20K_y%20%3D%20%5Cbegin%7Bpmatrix%7D%201%20%26%202%20%26%201%20%5C%5C%200%20%26%200%20%26%200%20%5C%5C%20-1%20%26%20-2%20%26%20-1%20%5Cend%7Bpmatrix%7D.)
 
-Then, the magnitude $G$ and the slope $\theta$ of the gradient are calculated:
-$$ |G| = \sqrt{I_x^2 + I_y^2}, $$
-$$ \theta(x,y) = arctan\left(\frac{I_y}{I_x}\right)$$<br><br>
+Then, the magnitude $G$ and the slope ![theta](https://latex.codecogs.com/gif.latex?%5Ctheta) of the gradient are calculated:
+![magnitude](https://latex.codecogs.com/gif.latex?%7CG%7C%20%3D%20%5Csqrt%7BI_x%5E2%20&plus;%20I_y%5E2%7D%2C)
+![angle](https://latex.codecogs.com/gif.latex?%5Ctheta%28x%2Cy%29%20%3D%20arctan%5Cleft%28%5Cfrac%7BI_y%7D%7BI_x%7D%5Cright%29)
+<br><br>
 
 3. **Non-maximum suppression.** For each pixel find two adjacent pixels. If the magnitude of the current pixel is greater than the magnitudes of the adjacents, nothing changes, otherwise, the magnitude of the current pixel is set to zero.<br><br>
 
