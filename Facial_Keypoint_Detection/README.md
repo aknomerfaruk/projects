@@ -26,6 +26,9 @@
         keypoints numpy array to Pytorch tensor as well.
 
     4. Define DataLoader objects
+        
+        [Pytorch Data Loader Tutorial](https://pytorch.org/tutorials/beginner/data_loading_tutorial.html)
+
 
         We define the data loader objects. We seperate 10% of the data for the validation. We set batch
         size to 64.
