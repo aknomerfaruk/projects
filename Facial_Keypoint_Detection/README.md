@@ -25,10 +25,9 @@
         We define ToTensor class which converts image(numpy ndarray) to Pytorch tensor. We also convert
         keypoints numpy array to Pytorch tensor as well.
 
-    4. Define DataLoader objects
-        
-        [Pytorch Data Loader Tutorial](https://pytorch.org/tutorials/beginner/data_loading_tutorial.html)
+[Pytorch Data Loader Tutorial](https://pytorch.org/tutorials/beginner/data_loading_tutorial.html)
 
+    4. Define DataLoader objects
 
         We define the data loader objects. We seperate 10% of the data for the validation. We set batch
         size to 64.
